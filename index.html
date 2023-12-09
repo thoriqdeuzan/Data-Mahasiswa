@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian PWEB</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark text-white">
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <h1 class="text-center">DATA MAHASISWA</h1>
+                
+                <form id="formMahasiswa" class="animated fadeInUp">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" class="form-control" name="nama" id="nama">
+                    </div>
+                    <div class="form-group">
+                        <label for="jurusan">Jurusan</label>
+                        <select class="form-control" name="jurusan" id="jurusan">
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Teknik Industri">Teknik Industri</option>
+                            <option value="Psikologi">Psikologi</option>
+                            <option value="Manajemen">Manajemen</option>
+                            <option value="Teknik Elektro">Teknik Elektro</option>
+                            <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+                            <option value="Agronomi">Agronomi</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="semester">Semester</label>
+                        <select class="form-control" name="semester" id="semester">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="gmail">Gmail</label>
+                        <input type="text" class="form-control" name="gmail" id="gmail">
+                    </div>
+                    <div class="form-group">
+                        <label for="noTelepon">No Telepon</label>
+                        <input type="text" class="form-control" name="noTelepon" id="noTelepon">
+                    </div>
+                    <div class="form-group">
+                        <label for="alamat">Alamat</label>
+                        <input type="text" class="form-control" name="alamat" id="alamat">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-5 animated fadeIn">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Jurusan</th>
+                        <th>Semester</th>
+                        <th>gmail</th>
+                        <th>No Telepon</th>
+                        <th>Alamat</th>
+                    </tr>
+                </thead>
+                <tbody id="dataMahasiswaBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
